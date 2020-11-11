@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms</title>
+		<style>
+		fieldset{
+		background-image:url("images/coffee-beans.jpg");
+		<!--background-color:brown;-->
+		}
+		label{
+		display:block;
+		width:200px;
+		float:left;
+		text-align:right;
+		marge:10px 5px;
+		clear:left;
+		}
+		input,select,textarea{
+		margin: 10px 5px; 
+		vertical-align:middle;
+		}
+		.checks{
+		vertical-align:bottom;
+		}
+		#submit{
+		margin-left:200px;
+		background-color:blue;
+		color:white;
+		}
+		
+		</style>
+	<style>
+
+	</style>
+	</head>
+
+	<body>
+		<h1>Forms</h1>
+		<form action="form-submit.php" method="get">
+			<fieldset>
+				<legend>Personsal Information</legend>
+				<label for="firstName">First Name:</label>
+				<input type="text" name="firstName" autofocus required/>
+				<br/>
+				<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="Enter you email" required/>
+			</fieldset>
+			<br/>
+			<label for=",check">Checkbox:</label>
+			<input class="checks" type="checkbox" name="check" value="ch1"/>check 1
+			<input class="checks"type="checkbox" name="check" value="ch2"/>check 2
+			<br/>
+			<label for="radio">Radio:</label>
+			<input class="checks"type="radio" name="radio" value="rad1"/>radio 1
+			<input class="checks"type="radio" name="radio" value="rad2"/>radio 2
+			<br/>
+			<label for="msg">Message:</label>
+			<textarea name="msg">Leave a comment</textarea>
+			<br/>
+			<label for="dropdown">Dropdown:</label>
+			<select name="dropdown">
+				<option value="o1">Option 1</option>
+				<option value="o2">Option 2</option>
+				<option value="o3">Option 3</option>
+				<option value="o4">Option 4</option>
+				<option value="o5">Option 5</option>
+			</select>
+			<br/>
+			<label for="pass">Password:</label>
+			<input type="password" name="pass"/>
+			<br/>
+			<label for="number">Number: </label>
+			<input type="number" name="number"/>
+			<br/>
+			<label for="rage">Range: </label>
+			18<input type="range" name="range" min="18" max="90" value="18"/>90
+			<br/>
+			<label for="date">Date: </label>
+			<input type="date" name="date"/>
+
+			<br/>
+			<label for="time">Time: </label>
+			<input type="time" name="time"/>
+			<br/>
+			<label for="color">Color: </label>
+			<input type="color" name="color" />
+
+
+			<br/>
+			<input id="submit"type="submit" value="SEND"/>
+		</form>
+
+
+	</body>
+</html>

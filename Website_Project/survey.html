@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<header>
 		<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -18,31 +19,58 @@
 			<li><a href="survey.html">Coffee Survey</a></li>
 		</ul>
 		</nav>
-
-		Coffee Survey
-
-		Your Name
-
-		Email Address
-
-		Tell us your coffee preparation methods.
-
-		Do you grind your own beans?
-		yes
-		no
-
-		How do you drink your coffee?
-		with sugar
-		with cream
-
-		What is your favorite coffee drink?
-
-		please select a drink
-		drip coffee
-		french press
-		espresso
-		latte
-		flavored
+		<h1>Coffee Survey</h1>
+		</header>
+		<!--
+		<aside>
+		<figure>
+		<img src="images/espresso.jpg" alt="A cup of coffee"/>
+		</aside>
+		</figure>
+		-->
+		<form class="formy">
+			<fieldset class="fieldClass">
+			<section>
+			<legend> Personal Information</legend>
+			Your Name
+			<input type="text" name="name" required size="40"/>
+			<br/>
+			Email Address
+			<input type="email" name="eamil" required placeholder="Entrer email" size="40"/>
+			<br/><br/>
+			</section>
+			</fieldset>
+			<fieldset>
+			<section>
+				Tell us your coffee preparation methods.
+				<br/>
+				<textarea name="preparation" cols="40" rows="6"></textarea>
+				<br/><br/>
+				<legend>Your Coffee Preferences</legend>
+				Do you grind your own beans?
+				<br/>
+				<input type="radio" name="grind" value="yes"/>yes
+				<input type="radio" name="grind" value="no"/>no
+				<br/><br/>
+				How do you drink your coffee?
+				<br/>
+				<input type="checkbox" name="drink" value="sugar"/>with sugar
+				<input type="checkbox" name="drink" value="cream"/>with cream
+				<br/><br/>
+				What is your favorite coffee drink?
+				<br/>
+				<select name="favourite">
+					<option value="">please select a drink</option>
+					<option value="drip">drip coffee</option>
+					<option value="french">french press</option>
+					<option value="espresso">espresso</option>
+					<option value="latte">latte</option>
+					<option value="falvour">flavored</option>
+					<br/>
+				</select>
+			</section>	
+			</fieldset>
+		<form>
 		<footer>
 		<nav>
 		<ul>
