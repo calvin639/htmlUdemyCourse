@@ -90,3 +90,24 @@ td, th{
 table{
 	border-collapse:collapse;
 }
+
+.formy {
+    position: relative; 
+	opacity: 0.999;
+}
+
+.formy::before{    
+      content: "";
+      background-image: url('images/coffee-cup.png');
+      background-repeat: repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.1;
+}
+
+.fieldset.fieldClass{
+	opacity:0.999;
+}
