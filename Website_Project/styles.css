@@ -108,6 +108,12 @@ table{
       opacity: 0.1;
 }
 
-.fieldset.fieldClass{
+fieldset{
 	opacity:0.999;
+}
+video{
+	margin-bottom:25px;
+	margin-left:160px;
+	-moz-filter:grayscale(100%);
+	filter:grayscale(10%);
 }
